@@ -190,4 +190,4 @@ React.Children.toArray(children)
 
 > Note:
 >
-> 当children是扁平列表时，`React.Children.toArray()` 改变key来保留嵌套数组的语义。也就是说，`toArray` 返回数组以key作为前缀，以便将每个 `element` 的key限定到包含它的输入数组。
+> 当children是扁平列表时，`React.Children.toArray()` 改变key来保留嵌套数组的语义。也就是说，为了在展开时保留嵌套数组的语义，`toArray` 会自动的给数组中每个 key 加了上前缀，以便将每个元素的key被限定到包含它的输入数组。
